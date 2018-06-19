@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="./js/jQuery3.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-xs-0 col-md-4"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+            <div class="page-header">
+                <h1>登陆
+                    <small>XXX管理系统</small>
+                </h1>
+            </div>
+            <div class="">
+                <div class="progress col-xs-11" style="padding: 0">
+                    <div class="progress-bar progress-bar-success" id="step" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                        style="width: 0%;">
+                        1/2
+                    </div>
+                </div>
+                <div class="col-xs-1 step-box">
+                    <span class="step">
+                        <img id="processLogo" src="./image/loading.png" alt="">
+                    </span>
+                </div>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="username" class="form-control" id="username" placeholder="输入用户名">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="输入密码">
+                </div>
+                <div class="btn btn-success" id="submit" onclick="submit();" style="width: 100%;">提交</div>
+            </form>
+            <div style="margin-top: 10px; color: gray; font-size: 16px;">username: admin, password: admin</div>
+        </div>
+        <div class="col-xs-0 col-md-4"></div>
+    </div>
+    
+    <!-- Small modal -->
+
+    <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content" id="modalContent" style="padding: 20px;">
+                
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
